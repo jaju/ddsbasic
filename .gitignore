@@ -1,0 +1,12 @@
+CMakeCache.txt
+Makefile
+CMakeFiles
+cmake_install.cmake
+src/config.h
+*.so
+*.o
+*.swp
+*.swo
+*~
+src/*.cmake
+CTestTestfile.cmake

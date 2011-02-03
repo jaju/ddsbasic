@@ -1,0 +1,3 @@
+Skeleton for a new C++ project with basic cmake, googletest and googlemock stuff.
+
+Expects googletest cmake-module to exist. A usable cmake module for googlemock is part of this repository.
