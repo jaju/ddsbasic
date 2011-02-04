@@ -10,3 +10,4 @@ src/config.h
 *~
 src/*.cmake
 CTestTestfile.cmake
+*.exe
