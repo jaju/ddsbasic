@@ -1,14 +1,10 @@
 #include <gtest/gtest.h>
-#include <gmock/gmock.h>
 #include <sstream>
 
 #include "repl.hpp"
-using namespace ::testing;
+#include "mocks/interpretermock.hpp"
 
-class MockInterpreter : public Interpreter {
-    public:
-        MOCK_METHOD2(gobble, ParseStatus(std::string command, std::string &message));
-};
+using namespace ::testing;
 
 TEST(REPL, Basic) {
     MockInterpreter mock;
@@ -21,4 +17,3 @@ TEST(REPL, Basic) {
     REPL repl(mock, input, outstream);
     repl.run();
 }
-
