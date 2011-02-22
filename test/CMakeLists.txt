@@ -22,5 +22,5 @@ target_link_libraries(repltest.exe ${GTEST_BOTH_LIBRARIES} ${GOOGLEMOCK_LIBRARIE
 add_executable(interpretertest.exe interpretertest.cpp)
 target_link_libraries(interpretertest.exe ${GTEST_BOTH_LIBRARIES} ${GOOGLEMOCK_LIBRARIES} pthread)
 
-add_test(REPLTests repltest)
-add_test(InterpreterTests interpretertest)
+add_test(REPLTests repltest.exe)
+add_test(InterpreterTests interpretertest.exe)

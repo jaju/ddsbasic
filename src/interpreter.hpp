@@ -16,8 +16,8 @@ class Interpreter {
 
     public:
         virtual ParseStatus gobble(std::string command, std::string &message /*out*/);
-        virtual ParseStatus parse(std::string command);
 
     private:
+        virtual ParseStatus parse(std::string command);
         static std::string messageForStatus(ParseStatus status);
 };

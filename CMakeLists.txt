@@ -9,3 +9,4 @@ configure_file(${SRC_DIR}/config.h.in
 
 add_subdirectory(src)
 add_subdirectory(test)
+enable_testing()
